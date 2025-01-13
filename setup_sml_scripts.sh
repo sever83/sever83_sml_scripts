@@ -9,7 +9,7 @@ rm -r /var/www/html/xlxd/sml
 mkdir /var/www/html/xlxd/sml
 mkdir /var/www/html/xlxd/sml/unit
 
-cd sever83_sml_scripts
+#cd sever83_sml_scripts
 
 cp index.html /var/www/html/xlxd/sml/index.html
 cp index2.html /var/www/html/xlxd/sml/unit/index.html
