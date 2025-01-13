@@ -12,6 +12,7 @@ mkdir /var/www/html/sml/unit
 cd sever83_sml_scripts
 
 cp index.html /var/www/html/sml/index.html
+cp index2.html /var/www/html/sml/unit/index.html
 
 cp sml.sh /var/www/html/sml/sml.sh
 cp sml-del.sh /var/www/html/sml/sml-del.sh
