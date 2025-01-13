@@ -6,6 +6,7 @@
 2. Have a ...
 3. 
 ```sh
+cd /home
 git clone https://github.com/vaikcode/sever83_sml_scripts
 cd sever83_sml_scripts
 chmod +x setup_sml_scripts.sh
