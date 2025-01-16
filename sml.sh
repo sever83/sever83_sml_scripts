@@ -15,19 +15,24 @@ chmod +x /home/pi-star/sml-*.sh
 
 echo "Progress: 1/5"
 sml-cron #&>/dev/null
+echo "end Progress: 1/5"
 
 echo "Progress: 2/5"
 sml-gethost #&>/dev/null
+echo "end Progress: 2/5"
 
 echo "Progress: 3/5"
 sml-getdmrid #&>/dev/null
+echo "end Progress: 3/5"
 
 echo "Progress: 4/5"
 rm -rf /home/pi-star/sml-*.sh
 rm -rf /home/pi-star/sml.sh
+echo "end Progress: 4/5"
 
 echo "Progress: 5/5"
 sml-update #&>/dev/null
+echo "end Progress: 5/5"
 
 echo "-----<===== FINISH =====>-----"
 
