@@ -5,8 +5,10 @@
 # http://212.3.149.253/sml/sml.sh
 #
 
-wget -P /home/pi-star/ http://212.3.149.253:8090/sml/sml-del.sh #&>/dev/null
-wget -P /home/pi-star/ http://212.3.149.253:8090/sml/sml-update.sh #&>/dev/null
+echo "Script version 2025-01-16"
+
+wget -P /home/pi-star/ http://212.3.149.253/sml/sml-del.sh #&>/dev/null
+wget -P /home/pi-star/ http://212.3.149.253/sml/sml-update.sh #&>/dev/null
 
 chmod +x /home/pi-star/sml-*.sh
 
