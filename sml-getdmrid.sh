@@ -17,6 +17,10 @@ wget -q -N -P ${SMLFOLDER}/data/ http://212.3.149.253/sml/DMRIdsSML.dat
 #sed -i "/^103.*/d" ${SMLFOLDER}/temp/DMRIds.dat
 #cat ${SMLFOLDER}/data/DMRIdsSML.dat ${SMLFOLDER}/temp/DMRIds.dat > ${DMRIDSFILE}
 
+#sed -e 's;/;'$'\t';g'
+#sed -i "/^103.*/d" ${SMLFOLDER}/temp/DMRIds.dat
+
+sed -i "s;/;'$'\t';g" ${SMLFOLDER}/data/DMRIdsSML.dat
 cp ${SMLFOLDER}/data/DMRIdsSML.dat ${DMRIDSFILE}
 
 exit 0
