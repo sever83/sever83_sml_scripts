@@ -10,7 +10,7 @@ mount -o remount,rw /
 systemctl disable sml.timer sml.service &>/dev/null
 systemctl stop sml.timer sml.service &>/dev/null
 
-unlimk /etc/systemd/system/sml.service
+unlink /etc/systemd/system/sml.service
 unlink /etc/systemd/system/sml.timer
 
 systemctl daemon-reload
