@@ -1,9 +1,4 @@
 #!/usr/bin/env bash
-#
-# sml-del.sh
-#
-# http://212.3.149.253/sml/sml-del.sh
-#
 
 mount -o remount,rw /
 
@@ -21,7 +16,9 @@ find /usr/local/bin/ -type l -name "sml-*" -delete
 
 rm -rf /sml
 
-wget -O /usr/local/etc/DMRIds.dat http://www.pistar.uk/downloads/DMRIds.dat
+wget -O /usr/local/etc/DMRIds.dat https://www.radioid.net/static/dmrid.dat
+
+sed -i -e 's/;/\t/g' /usr/local/etc/DMRIds.dat
 
 rm -rf /etc/cron.d/smlcron
 rm -rf /usr/local/bin/sml
