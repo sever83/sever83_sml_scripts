@@ -1,15 +1,10 @@
 #!/usr/bin/env bash
-#
-# sml-update.sh
-#
-# http://212.3.149.253/sml/sml-update.sh
-#
 
 mount -o remount,rw /
 
-SMLFOLDER=/sml
+SMLFOLDER=/tmp/sml
 
-mkdir ${SMLFOLDER}
+mkdir -p ${SMLFOLDER}
 mkdir -p ${SMLFOLDER}/scripts
 mkdir -p ${SMLFOLDER}/temp
 mkdir -p ${SMLFOLDER}/data
