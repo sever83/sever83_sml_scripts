@@ -4,7 +4,7 @@ mount -o remount,rw /
 sed -i "/^391.*/d" /usr/local/etc/XLXHosts.txt
 echo "391;212.3.149.253;4004" >> /usr/local/etc/XLXHosts.txt
 
-sed -i "/^11400.*/d" /usr/local/etc/YSFHosts.txt
+sed -i "/^39100.*/d" /usr/local/etc/YSFHosts.txt
 echo "39100;RU-C4FM SMOLENSK;@XLXSMK;212.3.149.253;42000" >> /usr/local/etc/YSFHosts.txt
 echo "39100;RU-C4FM SMOLENSK;@XLXSMK;212.3.149.253;42000" > /root/YSFHosts.txt
 
