@@ -8,7 +8,7 @@ sed -i "/^39100.*/d" /usr/local/etc/YSFHosts.txt
 echo "39100;RU-C4FM SMOLENSK;@XLXSMK;212.3.149.253;42000" >> /usr/local/etc/YSFHosts.txt
 echo "39100;RU-C4FM SMOLENSK;@XLXSMK;212.3.149.253;42000" > /root/YSFHosts.txt
 
-sed -i "/^XLX_114.*/d" /usr/local/etc/DMR_Hosts.txt
+sed -i "/^XLX_391.*/d" /usr/local/etc/DMR_Hosts.txt
 echo "XLX_391				0000	212.3.149.253				passw0rd	62030" >> /usr/local/etc/DMR_Hosts.txt
 echo "XLX_391				0000	212.3.149.253				passw0rd	62030" > /root/DMR_Hosts.txt
 
