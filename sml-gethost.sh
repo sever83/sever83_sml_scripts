@@ -24,8 +24,8 @@ echo "SMK;212.3.149.253;4004" > /root/XLXHosts.txt
 
 
 sed -i "/^391*/d" /usr/local/etc/P25Hosts.txt
-echo "39100	212.3.149.253	41000" >> /usr/local/etc/P25Hosts.txt
-echo "39100	212.3.149.253	41000" > /root/P25Hosts.txt
+echo "391	212.3.149.253	41000" >> /usr/local/etc/P25Hosts.txt
+echo "391	212.3.149.253	41000" > /root/P25Hosts.txt
 
 
 exit 0
