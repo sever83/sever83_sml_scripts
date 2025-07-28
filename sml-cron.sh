@@ -4,7 +4,7 @@ mount -o remount,rw /
 
 SMLFOLDER=/tmp/sml
 
-if [ -f /usr/local/sbin/pistar-daily.cron ];then
+if [ -f /usr/local/sbin/pistar-daily.cron ]; then
 	sed -i "s/^\/usr\/local\/sbin\/HostFilesUpdate.sh.*/\/usr\/local\/sbin\/HostFilesUpdate.sh;sml-gethost;sml-getdmrid;/" /usr/local/sbin/pistar-daily.cron
 fi
 
