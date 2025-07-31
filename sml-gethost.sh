@@ -12,9 +12,9 @@ echo "39100;RU-XLX391;XLX SMK-MSK;212.3.149.253;42000;000;" >> /usr/local/etc/YS
 echo "39100;RU-XLX391;XLX SMK-MSK;212.3.149.253;42000;000;" > /root/YSFHosts.txt
 sed -i "/^XLX_391.*/d" /usr/local/etc/DMR_Hosts.txt
 echo "XLX_391 0000 212.3.149.253 passw0rd 62030" >> /usr/local/etc/DMR_Hosts.txt
-sed -i "/^SML.*/d" /usr/local/etc/XLXHosts.txt
-echo "SML;212.3.149.253;4004" >> /usr/local/etc/XLXHosts.txt
-echo "SML;212.3.149.253;4004" > /root/XLXHosts.txt
+sed -i "/^SMK.*/d" /usr/local/etc/XLXHosts.txt
+echo "SMK;212.3.149.253;4004" >> /usr/local/etc/XLXHosts.txt
+echo "SMK;212.3.149.253;4004" > /root/XLXHosts.txt
 sed -i "/^XLX_SML.*/d" /usr/local/etc/DMR_Hosts.txt
 echo "XLX_SMK 0000 212.3.149.253 passw0rd 62030" >> /usr/local/etc/DMR_Hosts.txt
 echo "XLX_SMK 0000 212.3.149.253 passw0rd 62030" > /root/DMR_Hosts.txt
