@@ -1,10 +1,8 @@
 [Unit]
 Description=SML launcher scripts
 Requires=sml.service
-
 [Timer]
 Unit=sml.service
 OnCalendar=*-*-* *:00/10:00
-
 [Install]
 WantedBy=timers.target
