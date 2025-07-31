@@ -13,7 +13,7 @@ systemctl daemon-reload
 sed -i "s/^\/usr\/local\/sbin\/HostFilesUpdate.sh.*/\/usr\/local\/sbin\/HostFilesUpdate.sh/" /usr/local/sbin/pistar-daily.cron
 find /usr/local/bin/ -type l -name "sml-*" -delete
 rm -rf /sml
-wget -O /usr/local/etc/DMRIds.dat http://www.pistar.uk/downloads/DMRIds.dat
+# wget -O /usr/local/etc/DMRIds.dat http://www.pistar.uk/downloads/DMRIds.dat
 rm -rf /etc/cron.d/smlcron
 rm -rf /usr/local/bin/sml
 rm -rf /usr/local/bin/del-sml
