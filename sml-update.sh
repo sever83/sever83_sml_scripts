@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
-
+#
+# sml-update.sh
+#
+# http://212.3.149.253/sml/sml-update.sh
+#
 mount -o remount,rw /
-
-SMLFOLDER=/tmp/sml
-
-mkdir -p ${SMLFOLDER}
+SMLFOLDER=/sml
+mkdir ${SMLFOLDER}
 mkdir -p ${SMLFOLDER}/scripts
 mkdir -p ${SMLFOLDER}/temp
 mkdir -p ${SMLFOLDER}/data
@@ -22,5 +24,4 @@ ln -s ${SMLFOLDER}/scripts/sml-update.sh /usr/local/bin/sml-update
 chmod +x ${SMLFOLDER}/scripts/*.sh
 wget -q -N -P ${SMLFOLDER}/unit/ http://212.3.149.253/sml/unit/sml.service
 wget -q -N -P ${SMLFOLDER}/unit/ http://212.3.149.253/sml/unit/sml.timer
-
 exit 0
