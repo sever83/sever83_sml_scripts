@@ -24,6 +24,7 @@ echo "XLX_SMK 0000 212.3.149.253 passw0rd 62030" >> /usr/local/etc/DMR_Hosts.txt
 echo "XLX_SMK 0000 212.3.149.253 passw0rd 62030" > /root/DMR_Hosts.txt
 
 sed -i "/^391*/d" /usr/local/etc/P25Hosts.txt
-echo "391 212.3.149.253 41000" >> /usr/local/etc/P25Hosts.txt
-echo "391 212.3.149.253 41000" > /root/P25Hosts.txt
+echo "391	212.3.149.253	41000" >> /usr/local/etc/P25Hosts.txt
+echo "391	212.3.149.253	41000" > /root/P25Hosts.txt
+
 exit 0
