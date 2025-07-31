@@ -1,13 +1,11 @@
 [Unit]
 Description=SML launcher scripts
 Wants=sml.timer
-
 [Service]
 Type=oneshot
 User=root
 ExecStart=sml-update
 ExecStart=sml-getdmrid
 ExecStart=sml-gethost
-
 [Install]
 WantedBy=multi-user.target
